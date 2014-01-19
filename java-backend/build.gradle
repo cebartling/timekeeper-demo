@@ -14,8 +14,8 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
 jar {
-    baseName = 'gs-spring-boot'
-    version =  '0.1.0'
+    baseName = 'timekeeper-spring-boot'
+    version =  '1.0.0'
 }
 
 repositories {
@@ -24,6 +24,8 @@ repositories {
 }
 
 dependencies {
+    runtime('org.apache.tomcat.embed:tomcat-embed-jasper:7.0.42')
+
     compile("org.springframework.boot:spring-boot-starter-web:0.5.0.M6")
     compile("org.springframework.boot:spring-boot-starter-actuator:0.5.0.M6")
 
